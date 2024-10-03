@@ -4,7 +4,12 @@ let input = "Hello Water World!";
 const vowels = ["a", "e", "i", "o", "u"];
 let resultArray = [];
 //console.log(input.length);
-for (let i = 0; i <= input.length; i++)
-    {
-      //console.log(i);
+for (let indexInput = 0; indexInput <= input.length; indexInput++) {
+    //console.log(indexInput);
+    for (let indexVowels = 0; indexVowels < vowels.length; indexVowels++) {
+      //console.log(indexVowels);
+      if (input[indexInput] === vowels[indexVowels]){
+        //console.log(input[indexInput])
+      }
     }
+  }
