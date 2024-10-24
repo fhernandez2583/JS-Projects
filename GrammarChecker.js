@@ -13,6 +13,9 @@ console.log(count);
 storyWords = storyWords.filter((word) => {
   return word !== unnecessaryWord;
 });
+storyWords = storyWords.map((word) => {
+  return word === misspelledWord ? "beautiful" : word;
+});
 
 //console.log(storyWords);
-console.log(storyWords.join(' '));
+console.log(storyWords.join(" "));
