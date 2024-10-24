@@ -9,7 +9,7 @@ let count = 0;
 storyWords.forEach((word) => {
   count++;
 });
-console.log(count);
+//console.log(count);
 storyWords = storyWords.filter((word) => {
   return word !== unnecessaryWord;
 });
@@ -19,6 +19,7 @@ storyWords = storyWords.map((word) => {
 let badWordIndex = storyWords.findIndex((word) => {
   return word === badWord;
 });
-console.log(badWordIndex);
+//console.log(badWordIndex);
+storyWords[78] = 'really'
 //console.log(storyWords);
 console.log(storyWords.join(" "));
