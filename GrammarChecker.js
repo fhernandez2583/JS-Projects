@@ -16,6 +16,9 @@ storyWords = storyWords.filter((word) => {
 storyWords = storyWords.map((word) => {
   return word === misspelledWord ? "beautiful" : word;
 });
-
+let badWordIndex = storyWords.findIndex((word) => {
+  return word === badWord;
+});
+console.log(badWordIndex);
 //console.log(storyWords);
 console.log(storyWords.join(" "));
