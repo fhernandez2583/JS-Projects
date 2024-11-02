@@ -12,10 +12,11 @@ const menu = {
         return (this._price = priceToCheck);
       }
     },
+
   };
-  menu.meal = 8;
-  menu.price = "pizza";
-  console.log(menu);
+  menu.meal = "pizza";
+  menu.price = 8;
+  //console.log(menu);
   //menu._meal = 0
   //menu._price = 'pizza'
   //console.log(menu);
