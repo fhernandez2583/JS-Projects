@@ -4,7 +4,12 @@ const menu = {
   
     set meal(mealToCheck) {
     if (typeof mealToCheck === 'string') {
-      return this.meal = mealToCheck
+      return this._meal = mealToCheck
+    }
+  },
+    set price(priceToCheck) {
+    if (typeof priceToCheck === 'string') {
+      return this._price = priceToCheck
     }
   }
   };
