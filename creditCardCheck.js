@@ -24,7 +24,27 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
-
+const validateCred = (arr) => {
+    // let reveseArr = arr.sort().reverse();
+    let cardCheck = arr.map(Number);
+    for (let i = cardCheck.length - 2; i >= 0; i = i - 2) {
+      let tempArr = cardCheck[i];
+  
+      tempArr = tempArr * 2;
+  
+      if (tempArr > 9) {
+        tempArr = (tempArr % 10) + 1;
+      }
+      cardCheck[i] = tempArr;
+    }
+    let total = 0;
+  
+    for (let i = 0; i < cardCheck.length; i++) {
+      total += cardCheck[i];
+    }
+    return total % 10 === 0;
+  };
+  console.log(validateCred(mystery2));
 
 
 
